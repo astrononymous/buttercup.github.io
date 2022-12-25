@@ -1,0 +1,78 @@
+html{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width: 100%;
+    overflow: hidden;
+
+    /*
+    background-image: url("buttercups/butter1.jpg");
+    background-size: 100px;
+    background-repeat: repeat-x;
+    */
+
+
+}
+
+#buttercup{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 80vh;
+    border: 1vh solid rgb(247, 180, 125);
+    border-radius: 10vh 3vh;
+    overflow: hidden;
+    z-index: 3;
+}
+
+#thebutter{
+    offset-position: top 2px;
+    padding:0px;
+}
+
+#backgrounds{
+    height:100vh;
+    width:100vw;
+    display:grid;
+    grid-template-rows: auto;
+    position:absolute;
+    top:0;
+    left:0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.background{
+    background: url(butterback.jpg);
+    position: relative; 
+    overflow: hidden;
+    height: 97px;
+    width: 120vw;
+    /*top:-50px;*/
+    left:-55px;
+    animation: slideshow 6s linear infinite;
+    animation-direction: reverse;
+    z-index: 1;
+    filter:grayscale(1);
+    transition:1.5s ease-in-out;
+    }
+    @keyframes slideshow{
+    0% {left: 0}
+    100% {left: -100px};
+    }
+.background:nth-child(odd){
+    animation-direction: normal;
+}
+.background:hover{
+    filter:grayscale(0);
+}
