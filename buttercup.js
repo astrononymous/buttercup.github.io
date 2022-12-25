@@ -1,5 +1,5 @@
  //declare some variables for pictures array and build it upon initialization
-var actualNumberOfPictures = 9; //actual number of pictures in the directory
+var actualNumberOfPictures = 24; //actual number of pictures in the directory
 var numPics = actualNumberOfPictures- 1;  
 var thePics = new Array();
 
